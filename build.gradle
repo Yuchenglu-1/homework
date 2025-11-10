@@ -30,6 +30,14 @@ dependencies {
 web3j {
     generatedPackageName = 'com.wetech.demo.web3j.contracts.{0}'
     generatedFilesBaseDir = 'src'
+    solidity {
+        // 在这里明确指定一个 solc 版本
+        // 插件会自动下载并使用这个版本的编译器
+        // 请根据你的合约 pragma solidity ^...; 选择一个合适的版本
+        executable = 'D:\\npm\\solc-windows.exe'
+
+
+    }
 }
 
 sourceSets {
