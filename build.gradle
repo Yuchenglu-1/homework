@@ -58,3 +58,10 @@ tasks.whenTaskAdded { task ->
         task.dependsOn(tasks.named('processResources'))
     }
 }
+bootJar {
+    enabled = true
+}
+
+jar {
+    enabled = false
+}
